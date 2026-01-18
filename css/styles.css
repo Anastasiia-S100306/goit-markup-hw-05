@@ -694,42 +694,37 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .checkbox-icon {
-  fill: #ffffff;
   opacity: 0;
+  fill: #f4f4fd;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.visually-hidden:checked + .checkbox-label .custom-checkbox {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
 
-.visually-hidden:checked + .checkbox-label .custom-icon {
-  opacity: 1;
-}
-
+/* Стиль кастомного чекбоксу */
 .custom-checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
+  margin-right: 8px;
+  background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input:checked + label > .custom-checkbox {
-  background-color: #4d5ae5;
+
+.visually-hidden:checked + .checkbox-label .custom-checkbox {
+  background-color: #404bbf; 
   border: none;
-  fill: #ffffff;
 }
+
+.visually-hidden:checked + .checkbox-label .checkbox-icon {
+  opacity: 1; 
+}
+
 
 /* ================= SUBMIT ================= */
 .modal-submit-btn {
